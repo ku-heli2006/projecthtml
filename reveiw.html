@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reveiw</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(247, 212, 217);
+}
+
+h1 {
+    color: #333;
+}
+
+.form {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+center h1 {
+    font-family: 'Book Antiqua', serif;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+center img {
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="radio"] + label {
+    font-weight: normal;
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 14px;
+}
+
+input[type="radio"] {
+    transform: scale(1.2);
+}
+
+input[type="submit"] {
+    background-color: #4CAF50; 
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049; 
+}
+
+.contact{
+    background-color: pink;
+    margin: 10px;
+    padding: 10px;
+}
+.copyright{
+    background-color: black;
+    text-align: center;
+}
+ul{
+            list-style-type: none;
+            margin: none;
+            padding:none;
+            overflow: none;
+            background-image: url(https://3.imimg.com/data3/CJ/XV/MY-2170440/baby-pink-flannel.jpg);
+            position:absolute;
+            position: -webkit-sticky;
+            width: 100%;
+
+        }
+        li{
+            float: left;
+        }
+        li a {
+                display: block;
+                color: black;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+        }
+        .active {
+            background-color: green;
+            }
+            li a:hover {
+            background-color: aqua;
+            }
+
+           
+            li {
+            border-right: 0.5px solid #bbb;
+            }
+
+            li:last-child {
+            border-right: none;
+                }
+
+
+
+
+    </style>
+
+
+</head>
+<body>
+    <div>
+        <ul>
+            <li><a href= "index.html"><b>Home</b></a></li>
+            <li><a href="selfcare.html"><b>Self Care</b></a></li>
+            <li><a href="differentcontext.html"><b>Different View</b></a></li>
+            <li><a href="treatment.html"><b>Therapy and Treatment</b></a></li>
+            <li><a href="reveiw.html"><b>Reveiw</b></a></li>
+        </ul>
+
+    </div>
+    <br>
+    <br><br>
+
+    <div class="form">
+        <form action="reveiw.php" method="post">
+    <center><h1><font style="Book antiqua" size="20px"><i>Customer Feedback</i></font></h1></center>
+    <center><image src="https://cdn-ilbhkjf.nitrocdn.com/AYcSYOvuIWCFQThzBNkVnNkzLNkOYHmr/assets/images/optimized/emperformblog.wpengine.com/wp-content/uploads/Performance_Ratings.jpg" alt="feedback" height="300px" width="500px"></center>
+    <h1><font size="11px"><i>Your feedback is valuable to Us</i></font></h1>
+    <label for="username">Name</label>
+    <input type="text" placeholder="name" id="name" name="name"><br><br>
+    <label for="Email" id="email" name="Email">Email
+    </label> 
+    <input type="email" id="emial" name="email"><br><br>
+    <br>
+    <label for="rate">Your rating matters</label><br>
+    <input type="radio" value="5star" name="rate">5star
+    <input type="radio" value="4star" name="rate">4star
+    <input type="radio" value="3star" name="rate">3star
+    <input type="radio" value="2star" name="rate">2star
+    <input type="radio" value="1star" name="rate">1star
+    <br><br>
+    
+    <label for="reveiw">Reveiw</label>
+    <textarea name="" id="reveiws" cols="3" rows="3" name="reveiw"></textarea>
+
+    <center><input type="submit" value="submit form"></center>
+    </div>
+
+    <div class="contact">
+        <h2><i>Contact</i></h2>
+        <table>
+            <td><image src="https://cdni.iconscout.com/illustration/premium/thumb/contact-us-illustration-download-in-svg-png-gif-file-formats--call-logo-customer-service-support-onboarding-pack-business-illustrations-4849052.png?f=webp" alt="contactus" height="100px" width="100px"></td>
+        <td>
+        Contact: <a mailto:someone@gamil.com>mentalhealth@gamil.com</a><br>
+        phone: +91 8956780956 , +91 7645983467
+        </td>
+        </table>
+    </div>
+ <div class="copyright"><font color="white">&copy 2024, Mental Health</font></style>
+ </form>
+
+ <script>
+    
+    document.querySelector("form").addEventListener("submit", function(event) {
+        event.preventDefault(); 
+
+        
+        alert("Thank you! Your feedback has been submitted.");
+
+        
+        this.submit();
+    });
+</script>
+
+</body>
+</html>
